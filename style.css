@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary: #21a5d5;
+}
+body {
+  font-family: sans-serif;
+}
+.bg-blue {
+  background-color: var(--primary);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+
+  width: 70%;
+  margin: auto;
+}
+.h-left,
+.mail,
+.address {
+  display: flex;
+  gap: 1rem;
+}
+.h-right {
+  display: flex;
+  gap: 1rem;
+}
+.mail p,
+.address p {
+  color: white;
+}
+.h-right {
+  color: #2084a8d8;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+nav {
+  box-shadow: 0 2px 3px 2px lightgray;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  width: 70%;
+  margin: auto;
+}
+.menu-items {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.contact-btn {
+  padding: 0.6rem 1rem;
+  background-color: var(--primary);
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+}
+.bi-list {
+  font-size: 2rem;
+  display: none;
+}
+.hero{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.hero-title, .hero-img{
+    width: 50%;
+}
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.hero-title h2{
+font-size: 3rem;
+}
+.demo{
+    align-self: flex-start;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+.hero-title p{
+    font-size: 1.4rem;
+}
+  @media (max-width: 810px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-title, .hero-img{
+    width: 90%;
+    padding: 2rem;
+  }
+  .hero-title{
+    justify-content: center;
+    text-align: center;
+  }
+  .demo{
+    align-self: center;
+  }
+}
+@media (max-width: 1282px) {
+  .header,
+  .nav, .hero {
+    width: 80%;
+  }
+}
+@media (max-width: 1119px) {
+  .header,
+  .nav,.hero {
+    width: 90%;
+  }
+}
+@media (max-width: 998px) {
+  .header,
+  .nav, .hero {
+    width: 95%;
+  }
+}
+@media (max-width: 952px) {
+  .menu-items {
+    display: none;
+  }
+  .bi-list {
+    display: block;
+  }
+}
+@media (max-width: 440px) {
+  .contact-btn {
+    display: none;
+ 
+}
+
+@media (max-width: 767px) {
+  .h-left {
+    display: none;
+  }
+}
